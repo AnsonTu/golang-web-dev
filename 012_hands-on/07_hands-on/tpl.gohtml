@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTC-8>
+    <title>Document</Document>
+</head>
+<body>
+
+{{range .}}
+    Restaurant Name: {{.RestaurantName}}
+    {{range .Meals}}
+        Meal: {{.MealType}}<br>
+        {{range .Dishes}}
+            Name: {{.Name}}<br>
+            Price: {{.Price}}<br>
+        {{end}}
+    {{end}}
+{{end}}
+
+<body>
+</html>
